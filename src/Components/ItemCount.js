@@ -1,31 +1,24 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const ItemCount = ({stock,initial,onAdd}) => {
-   const [contador, setContador] = useState(initial);
-
-const aumentarContador = () => {
-    if(contador < 5) {
-        setContador(contador + 1)
+function ItemCount(stock){
+    const [contador, setContador] = useState(0)
+    function agregar () {
+        if (contador < stock){
+            setContador(contador + 1)
+        }
     }
-}
-
-const bajarContador = () => {
-    if(contador > 1) {
-    setContador(contador - 1)
+    function disminuir () {
+        if (contador > 0){
+            setContador(contador - 1)
+        }
     }
-}
-
-const confirmarContador = () => {
-    alert("se agregaron" + contador + "productos al carrito")
-}
-
-return (
-    <>
-        <p>El contador va : {contador}</p>
-        <button onClick={aumentarContador}>aumentar</button>
-        <button onClick={bajarContador}>disminuir</button>
-        <button onClick={confirmarContador}>Agregar al Carrito</button>
-    </>
+    return(
+        <div>
+            <button onClick={agregar}>+</button>
+            <span>{contador}</span>
+            <button onClick={disminuir}>-</button>
+            <ItemCount stock={stock}/>
+        </div>
     )
 }
 export default ItemCount;

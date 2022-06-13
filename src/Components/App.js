@@ -4,13 +4,13 @@ import Main from "./Main";
 import ItemListContainer from "./ItemListContainer";
 import ItemCount from "./ItemCount";
 const App = () =>{
-    return (
+    return (    
         <>
             <NavBar/>
             <Main/>
+            <ItemListContainer/>
+            <ItemCount/>
             <Footer/>  
-            <ItemListContainer greeting="Hola, bienvenido a este e-commerce"/>
-            <ItemCount stock={5} onAdd={()=>{}} initial={1}/>
         </>
     )  
 } ;
