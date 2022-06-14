@@ -17,7 +17,6 @@ function ItemCount(stock){
             <button onClick={agregar}>+</button>
             <span>{contador}</span>
             <button onClick={disminuir}>-</button>
-            <ItemCount stock={stock}/>
         </div>
     )
 }
