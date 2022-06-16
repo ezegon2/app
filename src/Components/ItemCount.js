@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
+import style from './Css/ItemCount.module.css'
 
-function ItemCount(stock){
+function ItemCount({stock}){
     const [contador, setContador] = useState(0)
     function agregar () {
         if (contador < stock){
@@ -17,6 +18,12 @@ function ItemCount(stock){
             <button onClick={agregar}>+</button>
             <span>{contador}</span>
             <button onClick={disminuir}>-</button>
+            <button className={style.button3 } onClick={disminuir}>-</button>
+            <span className={style.number }>{contador}</span>
+            <button className={style.button4} onClick={agregar}>+</button>
+        {
+            contador > 0 ? <button className={style.button5}>Agregar al carrito</button> : <></>
+        }
         </div>
     )
 }

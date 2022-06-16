@@ -1,3 +1,7 @@
+import dryginrestinga from './img/Drygin-min.jpg'
+import restingaOtoño from './img/otoño-min.jpg'
+import restingaFlavoured from './img/flavoured-min.jpg'
+import restingaLemongrass from './img/lemongrass-min.jpg'
 const products = [
     {
         id: 1,
@@ -5,7 +9,7 @@ const products = [
         price: "$1.650",
         stock: 5,
         description:'dry gin restinga',
-        image: "../img/dryginrestinga.jpg" 
+        image: dryginrestinga
     },
     {
         id: 2,
@@ -13,7 +17,7 @@ const products = [
         price: "$2.100",
         stock: 3,
         description:'restinga destilado de otoño edicion botanica',
-        image: "../img/restingaotoño.jpg" 
+        image: restingaOtoño 
     },
     {
         id: 3,
@@ -21,7 +25,7 @@ const products = [
         price: "$2.450",
         stock: 4,
         description:'restinga flavored edition',
-        image: "../img/restingaflavorededition.jpg" 
+        image: restingaFlavoured 
     },
     {
         id: 4,
@@ -29,7 +33,15 @@ const products = [
         price: "$2.630",
         stock: 2,
         description:'restinga gin lemongrass botella de ceramica',
-        image: "../img/restingaginlemongrass.jpg" 
+        image: restingaLemongrass 
     }
 ]
+ export const product = {
+        id: 1,
+        name: "Dry Gin Restinga",
+        price: "$1.650",
+        stock: 5,
+        description:'dry gin restinga',
+        image: dryginrestinga
+    }
 export default products
