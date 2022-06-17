@@ -7,7 +7,6 @@ import ItemDetailContainer from "./ItemDetailContainer";
 function App () {
     return (    
         <div className="App">
-            <ItemListContainer/>
             <BrowserRouter>
             <NavBar/>
             <Routes>
@@ -16,7 +15,6 @@ function App () {
                 <Route path='/detail/:id' element={<ItemDetailContainer/>} />
             </Routes>
             <Main/>
-            <ItemDetailContainer/>
             </BrowserRouter>
             <Footer/>
         </div>

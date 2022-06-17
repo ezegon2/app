@@ -15,9 +15,6 @@ function ItemCount({stock}){
     }
     return(
         <div>
-            <button onClick={agregar}>+</button>
-            <span>{contador}</span>
-            <button onClick={disminuir}>-</button>
             <button className={style.button3 } onClick={disminuir}>-</button>
             <span className={style.number }>{contador}</span>
             <button className={style.button4} onClick={agregar}>+</button>
