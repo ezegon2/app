@@ -1,7 +1,10 @@
+import style from './Css/NavBar.module.css'
+import { Link } from 'react-router-dom'
+
 const Main = () => {
   return (
     <main>
-        <h2>Home</h2>
+        <h2><Link className={style.linkClass} to='/' >Home</Link></h2>
     </main>
   )
 }

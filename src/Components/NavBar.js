@@ -7,9 +7,9 @@ function NavBar() {
     <div>
         <ul>
             <li><Link className={style.linkClass} to='/' >Home</Link></li>
-            <li><Link className={style.linkClass} to='category/1'>Categoria 1</Link></li>
-            <li><Link className={style.linkClass} to='category/2'>Categoria 2</Link></li>
-            <li><Link className={style.linkClass} to='category/3'>Categoria 3</Link></li>
+            <li><Link className={style.linkClass} to='category/1'>Vinos</Link></li>
+            <li><Link className={style.linkClass} to='category/2'>Fernet</Link></li>
+            <li><Link className={style.linkClass} to='category/3'>whisky</Link></li>
         </ul>
     </div>
   )

@@ -1,9 +1,8 @@
 import React from 'react'
-import ItemCount from './ItemCount'
 import { Link } from 'react-router-dom'
 import style from './Css/Item.module.css'
 
-function Item({id, name, price, stock,image,description}) {
+function Item({id, name, price,image}) {
   return (
     <div className={style.container}>
       <h2>{name}</h2>

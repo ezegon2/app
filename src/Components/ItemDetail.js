@@ -1,6 +1,7 @@
 import React from 'react'
 import ItemCount from './ItemCount'
 import style from './Css/ItemDetail.module.css'
+import Main from './Main'
 
 function ItemDetail({name, id, description, stock, price, image}) {
   return (
@@ -15,7 +16,9 @@ function ItemDetail({name, id, description, stock, price, image}) {
         <p>{description}</p>
     </div>
     <ItemCount stock={stock}/>
-
+    <div>
+      <Main/>
+    </div>
     </div>
   )
 }
