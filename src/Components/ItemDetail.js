@@ -3,7 +3,7 @@ import ItemCount from './ItemCount'
 import style from './Css/ItemDetail.module.css'
 import Main from './Main'
 
-function ItemDetail({name, id, description, stock, price, image}) {
+function ItemDetail({name, id, description, stock, price, image,}) {
   return (
 
     <div className={style.coupon}>
@@ -12,7 +12,7 @@ function ItemDetail({name, id, description, stock, price, image}) {
     </div>
     <img src={image} alt={id} className={style.imageDetail} />
     <div className={style.container} >
-        <h2><b>{price}</b></h2> 
+        <h2>{price}</h2> 
         <p>{description}</p>
     </div>
     <ItemCount stock={stock}/>
