@@ -45,7 +45,7 @@ const products = [
         id: 5,
         name: "Fernet Branca",
         price: "$2.000",
-        stock: 3,
+        stock: 10,
         description:'Fernet-Branca es de color marrón claro con reflejos ámbar y desprende un aroma a menta que predomina sobre el resto de las hierbas con las que se elabora, aunque debajo de la menta se percibe pino, algunas notas florales y hasta caramelo.',
         image: branca,
         categoryId: '2' 
@@ -63,7 +63,7 @@ const products = [
         id: 7,
         name: "Trumpeter",
         price: "$3.500",
-        stock: 3,
+        stock: 5,
         description:'De un impactante color violeta. Nariz frutal destacando ciruelas, cerezas y notas florales que nos recuerdan a las violetas. Posee gran cuerpo y su vivaz estructura acentúa sus taninos intensos que se vuelven aterciopelados en el retrogusto.',
         image: trumpeter,
         categoryId: '1'  
