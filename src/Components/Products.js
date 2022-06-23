@@ -35,7 +35,7 @@ const products = [
     },
     {
         id: 4,
-        name: "Restinga Gin Lemongrass botella de ceramica",
+        name: "Restinga Lemongrass botella de ceramica",
         price: "$2.630",
         stock: 2,
         description:'London Dry Gin tradicional de Restinga con Lemongrass natural, que potencia el sabor cítrico haciendo más alimonado y fresco el gin, ideal para los meses de calor.',
