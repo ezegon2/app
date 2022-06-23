@@ -4,7 +4,7 @@ function Cart() {
   return (
     <div>
         <h1>Carrito</h1>
-        <Link to='/Checkout' >seguir comprando</Link>
+        <Link to='/' >seguir comprando</Link>
     </div>
   )
 }

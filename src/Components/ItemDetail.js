@@ -2,8 +2,12 @@ import React from 'react'
 import ItemCount from './ItemCount'
 import style from './Css/ItemDetail.module.css'
 import Main from './Main'
+import {Link} from 'react-router-dom'
 
 function ItemDetail({name, id, description, stock, price, image,}) {
+  const onAdd = (cantidadElegida) => {
+    console.log("desde item detail :"+cantidadElegida);
+  }
   return (
 
     <div className={style.coupon}>
@@ -15,7 +19,10 @@ function ItemDetail({name, id, description, stock, price, image,}) {
         <h2>{price}</h2> 
         <p>{description}</p>
     </div>
-    <ItemCount stock={stock}/>
+    <ItemCount stock={stock} onAdd={onAdd}/>
+    <div>
+    <Link to='/Cart'>Terminar mi compra</Link>
+    </div>
     <div>
       <Main/>
     </div>
