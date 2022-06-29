@@ -21,7 +21,7 @@ function ItemDetail({name, id, description, stock, price, image,}) {
     </div>
     <ItemCount stock={stock} onAdd={onAdd}/>
     <div>
-    <Link to='/Cart'>Terminar mi compra</Link>
+      <Link to="/Cart">terminar compra </Link>
     </div>
     <div>
       <Main/>

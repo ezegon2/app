@@ -7,7 +7,7 @@ function ItemDetailContainer() {
 
   const [product, setProduct] = useState()
 
-  const { id } = useParams()
+  const {id} = useParams()
   console.log(typeof id)
 
   useEffect(() => {

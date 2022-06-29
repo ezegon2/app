@@ -5,6 +5,9 @@ function Cart() {
     <div>
         <h1>Carrito</h1>
         <Link to='/' >seguir comprando</Link>
+        <div>
+          <Link to="/Checkout">finalizar compra </Link>
+        </div>
     </div>
   )
 }
