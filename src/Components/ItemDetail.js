@@ -1,12 +1,12 @@
-import React,{useState}from 'react'
+import React,{useState,useContext} from 'react'
 import ItemCount from './ItemCount'
 import style from './Css/ItemDetail.module.css'
 import Main from './Main'
 import {Link} from 'react-router-dom'
-import {contexto} from '/cartContext'
+import {contexto} from './CartContext'
 
 function ItemDetail({name, id, description, stock, price, image}) {
-  cosnt (agregarProducto) = useContext(contexto)
+  const {agregarProducto} = useContext(contexto)
   const [toggle,setToggle] = useState(true)
   const onAdd = (cantidadElegida) => {
     console.log("desde item detail :"+cantidadElegida);
