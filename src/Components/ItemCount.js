@@ -2,7 +2,7 @@ import React, {useState } from "react";
 import style from './Css/ItemCount.module.css'
 import { Link } from "react-router-dom";
 
-function ItemCount({stock,onAdd}){
+function ItemCount({stock,onAdd,setToggle}){
     const [contador, setContador] = useState(0)
     function agregar () {
         if (contador < stock){
@@ -16,6 +16,7 @@ function ItemCount({stock,onAdd}){
     }
     const confirmarContador = (e) => {
         onAdd(contador)
+        setToggle(false)
     }
     
     return(

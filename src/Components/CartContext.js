@@ -62,10 +62,11 @@ const isInCart = (categoryId) => {
         cantidad_total: cantidad_total,
         precio_total: precio_total,
         agregarProducto: agregarProducto,
+        cartLenght
     }
 
     return (
-        <Provider value={{carrito, agregarProducto, isInCart, eliminarProducto, actualizarCantidad, vaciarCarrito, cartLenght}}>
+        <Provider value={valorDelContexto}>
             {children}
         </Provider>
     )

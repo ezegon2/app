@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useState}from 'react'
 import ItemCount from './ItemCount'
 import style from './Css/ItemDetail.module.css'
 import Main from './Main'
 import {Link} from 'react-router-dom'
+import {contexto} from '/cartContext'
 
-function ItemDetail({name, id, description, stock, price, image,}) {
+function ItemDetail({name, id, description, stock, price, image}) {
+  cosnt (agregarProducto) = useContext(contexto)
+  const [toggle,setToggle] = useState(true)
   const onAdd = (cantidadElegida) => {
     console.log("desde item detail :"+cantidadElegida);
+    const item = {name, id, description, stock, price, image}
+    agregarProducto(item, cantidadElegida)
   }
   return (
 
@@ -19,10 +24,9 @@ function ItemDetail({name, id, description, stock, price, image,}) {
         <h2>{price}</h2> 
         <p>{description}</p>
     </div>
-    <ItemCount stock={stock} onAdd={onAdd}/>
-    <div>
-      <Link to="/Cart">terminar compra </Link>
-    </div>
+    {
+      toggle ? <ItemCount stock={stock} onAdd={onAdd} setToggle={setToggle}/> :  <Link to="/Cart">terminar compra </Link>
+    }
     <div>
       <Main/>
     </div>

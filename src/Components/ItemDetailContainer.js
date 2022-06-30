@@ -19,7 +19,10 @@ function ItemDetailContainer() {
 
 return (
        <div style={{marginTop: '30px'}}>
-          <ItemDetail {...product} />
+       {
+        product ?  <ItemDetail {...product} /> : <h1>Loading...</h1>
+       }
+
       </div>
 )
 }

@@ -7,7 +7,7 @@ import Checkout from './Checkout'
 
 function Cart() {
 
-const {carrito, getSubtotal, eliminarProducto, cartLenght, getTotal, vaciarCarrito} = useContext(contexto)
+const {carrito,cartLenght} = useContext(contexto)
 
 return (
   <>
@@ -29,8 +29,8 @@ return (
       <h3>Stock:{product.stock}</h3> 
       <h4>${product.price}.-</h4>
       <p>Cantidad total: {product.cantidad}</p>
-      <div><p>Importe Subtotal: ${parseFloat(getSubtotal(product.price, product.cantidad))}</p></div>
-      <div> <button onClick={() => eliminarProducto(product.id)}>Eliminar Item</button></div>
+      {/* <div><p>Importe Subtotal: ${parseFloat(getSubtotal(product.price, product.cantidad))}</p></div> */}
+      {/* <div> <button onClick={() => eliminarProducto(product.id)}>Eliminar Item</button></div> */}
       </div> 
     )     
     )}
@@ -38,10 +38,10 @@ return (
             <p>Cantidad de items en total:{cartLenght()}</p>  
           </div> 
           <div>
-            <p>Importe Total: ${parseFloat(getTotal())}</p>
+            {/* <p>Importe Total: ${parseFloat(getTotal())}</p> */}
             </div>
             <div>
-          <button onClick={vaciarCarrito}>x Eliminar Todo </button>
+          {/* <button onClick={vaciarCarrito}>x Eliminar Todo </button> */}
           </div>
       <Link to="/checkout">Finalizar la Compra</Link>       
   </div>
