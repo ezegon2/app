@@ -1,5 +1,4 @@
 import { createContext, useState } from "react"
-import products from "./Products"
 // Contexto del carrito
 export const contexto = createContext()
 
@@ -29,13 +28,13 @@ export const MiProvider = ({ children }) => {
     }
 // Verifica si el producto ya fue agrgado al Cart
 const isInCart = (categoryId) => {
-    return carrito.some((item) => (item.id === id))
+    return carrito.some((item) => (item.id === categoryId))
 }
 
 
 // Remover un item del carrito
-    const eliminarProducto = (producto) => {
-        setCarrito (carrito.filter((item) => (item.producto !== producto)))
+    const eliminarProducto = (products) => {
+        setCarrito (carrito.filter((item) => (item.products !== products)))
     }
 
     const actualizarCantidad = (products, cantidad) => {
